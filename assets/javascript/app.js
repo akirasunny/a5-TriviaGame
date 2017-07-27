@@ -73,9 +73,7 @@ function remove() {
 }
 
 function clear() {
-	$("#timer").empty();
-	$("#question").empty();
-	$("#options").empty();
+	$("#timer", "#question", "#options").empty();
 }
 
 function reset() {
@@ -181,7 +179,7 @@ function result() {
 
 }
 
-// main function
+// main functions
 function main() {
 if (isstart === true) {
 	// show question div
@@ -264,6 +262,7 @@ function next() {
 
 }
 
+// main
 $("#start").on("click", function() {
 	$("#instruction").css("display", "none");
 	isstart = true;
